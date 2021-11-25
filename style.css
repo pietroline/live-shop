@@ -1,0 +1,62 @@
+#blackfriday{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    top: 0px;
+    z-index: 1;
+}
+
+.conteiner{
+    width: 80%;
+    margin: 150px auto;
+}
+
+.row{
+    margin: 40px 0px;
+}
+
+.product{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    /* background-color: red; */
+}
+
+.product:hover .heart {
+    display: block;
+}
+
+.discount:after{
+    content: "\0025";
+}
+
+.product .discount{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.discount.red{
+    background-color: #f00;
+}
+
+.discount.green{
+    background-color: #0f0;
+}
+
+.heart{
+    color: #f00;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: none;
+}
+
